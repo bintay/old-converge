@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 7% 23% 20px auto 23% 7%;
+  grid-template-rows: 100px 10px 100px 50px 80px auto;
+}
+
+form {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 14px;
+}
+
+.problem {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.answer {
+  grid-column: 4;
+  grid-row: 4;
+  margin: 0 auto;
+}
+
+.explain {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row: 6;
+  min-width: 300px;
+  font-size: 14px;
+}
+
+header {
+  height: 100px;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  background: #03a9f4;
+  box-shadow: 0 0 10px 0px rgba(33,33,33,0.5);
+}
+
+header h1 {
+  padding-top: 7px;
+  text-align: center;
+  color: #212121;
+}
+
+footer {
+  height: 50px;
+  width: 60%;
+  padding: 0 20%;
+  background: #03a9f4;
+  box-shadow: 0 0 10px 0px rgba(33,33,33,0.5);
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #01579b;
+}
+
+.small {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    grid-template-columns: 1% 48% 20px auto 10% 1%;
+  }
+
+  header h1 {
+    font-size: 1.9em;
+  }
+}

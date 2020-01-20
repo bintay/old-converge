@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Converge to Greatness</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
+  <meta name="description" content="Series convergence practice problem generator for calculus 2." />
+  <meta name="keywords" content="convergence,divergence,converge,diverge,test,ratio,root,integral,calculus,2,practice" />
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Converge to Greatness</h1>
+    </header>
+    <form>
+      <input type="checkbox" name="geometric" id="geometric" checked />
+      <label for="geometric">Geometric</label>
+      <br>
+      <input type="checkbox" name="pseries" id="pseries" checked />
+      <label for="pseries">P-Series</label>
+      <br>
+      <input type="checkbox" name="integral" id="integral" checked />
+      <label for="integral">Integral Test</label>
+      <br>
+      <input type="checkbox" name="comparison" id="comparison" checked />
+      <label for="comparison">Comparison Tests</label>
+      <br>
+      <input type="checkbox" name="ratio" id="ratio" checked />
+      <label for="ratio">Ratio Test</label>
+      <br>
+      <input type="checkbox" name="root" id="root" checked />
+      <label for="root">Root Test</label>
+      <br>
+      <input type="checkbox" name="alternating" id="alternating" checked />
+      <label for="alternating">Alternating Series</label>
+    </form>
+    <div class="problem">
+      $$ \sum\limits_{n=0}^\infty \left(\frac{1}{2}\right)^n $$
+    </div>
+    <div class="answer">
+      <button id="converges">Converges [c]</button>
+      <button id="diverges">Diverges [d]</button>
+    </div>
+    <div class="explain">
+      
+    </div>
+    <footer>
+      &copy; 2018 <a href="https://bentaylor.me/">Ben Taylor</a>
+      <br/>
+      Made with <a href="https://www.mathjax.org/">MathJax</a>, <a href="https://www.latex-project.org/">\(\rm\LaTeX\)</a>, and &lt;3 <span class="small">(between 2am and 7am on August 2, 2018)</span>
+    </footer>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src='main.js'></script>
+</body>
+</html>
